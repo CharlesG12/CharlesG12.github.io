@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/auctionHouse.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Auction House</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <!-- User's profile information page-->
+              <a class="nav-link" href="userInfo.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <!-- User's oders summary page -->
+              <a class="nav-link" href="oderSummary.html">Order Summary</a>
+            </li>
+            <li class="nav-item">
+                <!-- User's oder summary page -->
+                <a class="nav-link" href="sell.html">Sell</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" href="about.html" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+         
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active">
+          <a href="userInfo.html" target="_blank">
+            <!-- <img src="img/moutain.jpg" alt=""> -->
+            <div style="background-image: url('img/moutain.jpg'); background-size:cover; width:auto; height:100%;">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Personal Information</h3>
+              </div>
+            </div>
+            
+          <!-- </a> -->
+        </div>
+      
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item">
+          <a href="oderSummary.html" target="_blank">
+            <div style="background-image: url('img/calm.jpg'); background-size:cover; width:auto; height:100%;">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Orders Summary</h3>
+              </div>
+            </div>
+          
+          </a>
+        </div>
+      
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item">
+          <a href="sell.html" target="_blank">
+            <div style="background-image: url('img/picture.jpg'); background-size:cover; width:auto; height:100%;">
+               <!-- <img src="img/picture.jpg" alt=""> -->
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Start a sell</h3>
+              </div>
+            </div>
+           
+          <!-- </a> -->
+        </div>
+          
+          
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <h1 class="my-4">Welcome to Marvel Auction House</h1>
+
+      <!-- Marketing Icons Section -->
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header">What do we have</h4>
+            <div class="card-body">
+              <img class="img-fluid" src="img/have.jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header">How to bid</h4>
+            <div class="card-body">
+                <img class="img-fluid" src="img/bid.jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header">How to sell</h4>
+            <div class="card-body">
+              <img class="img-fluid" src="img/how.jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Call to Action Section -->
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <p id="motar">We offer tremondous care to our client and collection.</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-lg btn-secondary btn-block" href="contact.html">Call to Action</a>
+        </div>
+      </div>
+
+    <hr>
+      <!-- Our Customers -->
+      <h2 id="customer_toggle">Our Customers</h2>
+      <div id="customers" class="row">
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="img/AntManWasp.jpg" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="img/blackpanther.jpg" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="img/blackWidow.jpg" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="img/capitanAmerica.jpg" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="img/tonystark.jpg" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="img/deadpool.jpg" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+
+      
+      <div >
+        <hr>
+        <h2 id="specialEffects">Special Effects</h2>
+        <table id="effects">
+          <tbody>
+            <tr>
+              <td>
+                <p>Hide Show Testing</p>                  
+              </td>
+              <td>
+                <div>
+                  <button id="hide">Hide</button>
+                  <button id="show">Show</button>
+                  <button id="s_toggle">Toggle</button>
+                </div>
+              </td>
+              <td>
+                <p id="hiding">Hide Show Subject</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div>
+                    <p>Fading Testing</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <button id="fadeIn">Fade in</button>
+                  <button id="fadeOut">Fade out</button>
+                  <button id="fadeTo">Fade to</button>
+                  <button id="f_toggle">Toggle</button>
+                </div>
+              </td>
+              <td>
+                <div>
+                    <p id="fading">Fading subject</p>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <button id="alertButton">Mouse over for alert!</button>
+              </td>
+              <td>
+                <div id="box"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input id="keyPr" type="text" placeholder="key press fading">
+              </td>
+              <td>
+                <div id="f_3">
+                  <p>Object 1</p>
+                  <p>Object 2</p>
+                  <p>Object 3</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input id="keyDn" type="text" onkeydown="chainAnimate()" placeholder="key down animate">
+              </td>
+              <td>
+                <div id="a3">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
