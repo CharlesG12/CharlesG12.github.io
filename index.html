@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charles' CV</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Personal CV">
+        <meta name="keywords" content="CS, computerScience, Java, Python, MachineLearning">
+        <meta name="author" content="Charles Guo">
+        <link rel="stylesheet" href="style/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+    </head>
+
+    <body>
+        <header> 
+            <div id="title" class="selected">
+                <h1>Charles Guo</h1>
+                <p>Software developer, Machine learning, Virtual Reality</p>
+            </div>
+            <nav>
+                <a>Home</a>
+                <a>Education</a>
+                <a>Skills</a>
+                <a>Contact</a>
+            </nav>
+        </header>
+
+        <article class="container">
+
+            <div id="imageMap">
+                <img src="img/icons.jpg" alt="Social Media" width=100 height=100 usemap="#social_media"> 
+                <!-- Map -->
+                <map name="social_media">
+                    <area shape="rect" coords="0,0, 50,50" href="https://www.facebook.com/" target="_blank" alt="Youtube">
+                    <area shape="rect" coords="50,50, 100,0" href="https://www.linkedin.com/" target="_blank" alt="pinterest">
+                    <area shape="rect" coords="50,50, 100,100" href="https://www.Youtube.com/" target="_blank" alt="twitter">
+                    <area shape="rect" coords="50,50, 0,100" href="https://www.tumblr.com/" target="_blank" alt="tumblr">
+                </map>
+            </div>
+
+            <!-- Education history -->
+            <section class="row">
+                <h2>Education history</h2>
+                <div class="list">
+                    <ul id="education">
+                        <li>Master Degres in Finance</li>
+                        <li>Master Degree in Computer Science</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr>
+           
+            <!-- Publications, certifications, areas of expertise -->
+            <section class="row">
+                <h2> Areas of Expertise </h1>  
+                <div class="list">
+                    <ol id="expertise">
+                        <li>Machine Learning</li>
+                        <li>Facial Recognition</li>
+                        <li>Virtual Reality</li>
+                    </ol>
+                </div>     
+            </section>
+
+            <hr>
+
+            <!-- Table list forhea courses taken -->
+            <section class="row" >
+                <h2>Courses</h2>
+                <div>
+                    <table class="list" id="table">
+                        <tr>
+                            <td>Course Name</td>
+                            <td>Semester</td>
+                            <td>Year</td>
+                        </tr>
+                        <tr>
+                            <td>Web Programming</td>
+                            <td>Fall</td>
+                            <td>2018</td>
+                        </tr>
+                        <tr>
+                            <td>Machine Learning</td>
+                            <td>Fall</td>
+                            <td>2017</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <hr>
+           
+            <!-- Contact info 5 input validation -->
+            <section class="row">
+                <h2>Contact me</h2>
+                <div class="list" id="contact">
+                    <div>
+                        <a>Name:</a>
+                        <input type="text" id="name" name="name"  
+                               placeholder="Lastname Firstname" 
+                               pattern="[A-Za-z]{1,32} [A-Za-z]{1,32}"
+                               required />
+                        <a>Phone Number: </a>
+                        <input type="tel" id="phone" name="phone"  
+                               placeholder="XXX-XXX-XXXX" 
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                               required />
+                        <span class="validity"></span>
+                    </div>
+                    <div>
+                        <a>Email:</a>
+                        <input type="email" size="30" name="email" required placeholder="charles@gmail.com" />
+                    </div>
+                    <div>
+                        <input type="checkbox" name="subscribe"> Subscribe to Newsletter<br>                
+                    </div>
+                    <div>
+                        <p>Preferd contact method</p>
+                        <div>
+                            <input type="radio" id="contactChoice1" name="contact" value="phone" />
+                            <label for="contactChoice1">Phone</label>
+
+                            <input type="radio" id="contactChoice2" name="contact" value="sms" />
+                            <label for="contactChoice2">SMS</label>
+                            
+                            <input type="radio" id="contactChoice3" name="contact" value="email" />
+                            <label for="contactChoice3">Email</label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">  
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <!-- For javascript -->
+            <section>
+                <div class="row"> 
+                    <p id="ps1">Show Testing </p>
+                    <button onclick="hide()">Hide</button>
+                    <button onclick="show()">Show</button>
+                    <button onclick="toggle()">Toggle</button>
+                </div>   
+            </section>
+
+            <hr>
+
+            <section>
+                <div class="row"> 
+                    <p id="ps2">Fading Testing </p>
+                    <button ondblclick="_fadeIn()">Fade in</button>
+                    <button ondblclick="_fadeOut()">Fade out</button>
+                    <button ondblclick="_fadeTo()">Fade to</button>
+                    <button ondblclick="_fadeToggle()">Toggle</button>
+                </div>
+            </section>
+
+            <hr>
+            
+            <section>
+                <div class ="row">
+                    <button id="alertButton" onmouseenter="startAnima()" onmouseleave="stopAnima()">Mouse over for alert!</button>
+                    <div id="box"></div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <div class="row">
+                    <input id="keyPr" type="text" onkeypress="chainFading()" placeholder="key press fading">
+                    <div id="f_3">
+                        <p>Object 1</p>
+                        <p>Object 2</p>
+                        <p>Object 3</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <div class="row">
+                    <input id="keyDn" type="text" onkeydown="chainAnimate()" placeholder="key down animate">
+                    <div id="a3">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+    
+            <hr>
+
+        </article>
+
+        <footer class="center">
+            <div>
+                <p>Posted by: Charles Guo</p>
+                <p><time pubdate datetime="2018-10-04"></time></p>
+            </div>
+        </footer>
+
+    </body>
+</html>
